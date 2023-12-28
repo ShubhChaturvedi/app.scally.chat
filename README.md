@@ -24,6 +24,11 @@ This project is a scalable chat application that utilizes TurboRepo for managing
 - **Server-Side Rendering**: Utilizes Next.js for server-side rendering, improving performance and SEO.
 - **Custom Styling**: Styled with Tailwind CSS for rapid and customizable UI development.
 
+## Architecture
+### Basics
+![image](https://github.com/ShubhChaturvedi/app.scally.chat/assets/89243211/3dc73e46-e001-45f7-8e1e-73e89e1f093e)
+
+
 ## Installation
 
 ### Prerequisites
