@@ -6,14 +6,19 @@ class SocketServer{
     private _io : Server
     constructor(){
         console.log("socket service started...")
-        this._io = new Server();
+        this._io = new Server({
+            cors : {
+                allowedHeaders : ["*"],
+                origin : "*"
+            }
+        });
     }
 
     public initListeners(){
         console.log("we are in init listerners");
         const io = this._io;
         io.on("connect", (socket)=>{
-            console.log("a new socket in connected");
+            console.log("a new socket in connected", socket.id);
             socket.on("event:message", async ({message} : {message: String})=>{
 
                 console.log("an event => message <= emit with message", message);
