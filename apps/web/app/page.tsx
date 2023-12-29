@@ -37,8 +37,12 @@ export default function Page() {
           <div className="flex flex-col w-full h-full">
             {/* chat box */}
             <div style={{
-              height: "500px"
-            }} className="flex flex-col w-full overflow-y-scroll">
+              height: "500px",
+              // column reverse
+              flexDirection: "column-reverse",
+              // message touch base to bottom // dont know how to do this
+            }} className="flex 
+            w-full overflow-y-scroll">
               <Message />
               <FileAttachment />
               <CompressedMedia />
