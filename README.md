@@ -51,7 +51,13 @@ This project is a scalable chat application that utilizes TurboRepo for managing
     npm install
     ```
 
-3. Access the application in your browser at http://localhost:3000.
+3. Run development enviroment:
+
+    ```
+    yarn dev
+    ```
+
+4. Access the application in your browser at http://localhost:3000.
 
 ## Usage
 ### To use this project:
